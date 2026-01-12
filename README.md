@@ -1,3 +1,7 @@
+## Author
+
+**Nation Dibakwane**  
+
 # Livestock Image Classifier (Graph-Based)
 
 This is a Java program that groups livestock images based on how similar the animals look. It helps you organize images, find similar animals, count them, and manage your dataset.
@@ -39,7 +43,4 @@ Each image is a node in a graph. Connections between nodes show how visually sim
 3. Run the `MainApp` class  
 4. Load your image dataset  
 
-## Author
 
-**Nation Dibakwane**  
-Computer Science Graduate – University of Johannesburg
