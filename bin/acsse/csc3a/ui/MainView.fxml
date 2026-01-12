@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="acsse.csc3a.ui.MainController">
+
+  <!-- TOP TOOLBAR -->
+  <top>
+    <ToolBar>
+      <Button text="Load Folder" onAction="#onLoadFolder"/>
+      <Button text="Upload Image" onAction="#onUploadImage"/>
+      <Button text="Show Graph" onAction="#onShowGraph"/>
+    </ToolBar>
+  </top>
+
+  <!-- CENTER: placeholder for image or result -->
+  <center>
+    <StackPane fx:id="mainPane">
+      
+    </StackPane>
+  </center>
+
+  <!-- BOTTOM: scrollable image gallery -->
+  <bottom>
+    <HBox spacing="5" alignment="CENTER">
+      <padding>
+        <Insets top="5" right="5" bottom="5" left="5"/>
+      </padding>
+
+      <!-- Left scroll button -->
+      <Button fx:id="scrollLeft" text="◀"/>
+
+      <!-- Scrollable gallery -->
+      <ScrollPane fx:id="galleryScroll" fitToHeight="true" hbarPolicy="ALWAYS" prefHeight="220">
+        <HBox fx:id="galleryBox" spacing="10" alignment="CENTER">
+          <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+          </padding>
+        </HBox>
+      </ScrollPane>
+
+      <!-- Right scroll button -->
+      <Button fx:id="scrollRight" text="▶"/>
+    </HBox>
+  </bottom>
+
+</BorderPane>

@@ -1,0 +1,21 @@
+
+*.class
+*.jar
+*.war
+*.ear
+
+
+out/
+target/
+build/
+
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
