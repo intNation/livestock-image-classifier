@@ -1,43 +1,45 @@
 # Livestock Image Classifier (Graph-Based)
 
-Ever wondered if there was an easier way to keep track of your livestock just by looking at their photos? That’s exactly what this project does. It’s a Java-based tool that groups visually similar animals, helping farmers, researchers, or anyone working with livestock to manage their herd through images.  
+This is a Java program that groups livestock images based on how similar the animals look. It helps you organize images, find similar animals, count them, and manage your dataset.
 
-## About This Project
-Instead of throwing machine learning at the problem, this project takes a more hands-on approach. Each livestock image is treated as a point in a graph, and the connections between them show how similar the animals look. By building this “similarity graph,” the system can quickly find animals that look alike, count them, and even help update your image database.  
+## About
 
-## What You Can Do
-- Upload and organize your livestock images  
-- Find animals that look alike in seconds  
-- Count visually similar animals with ease  
-- Add new animals or remove ones that are sold  
-- Use a graph-based search to quickly find matches  
+Each image is a node in a graph. Connections between nodes show how visually similar the animals are. The program uses classical image processing and graph algorithms instead of machine learning.
+
+## Features
+
+- Upload and manage images  
+- Find visually similar animals  
+- Count similar animals for a chosen image  
+- Add or remove animals from the dataset  
+- Graph-based similarity search  
 
 ## How It Works
-1. Each image is converted into a feature vector using histogram analysis  
+
+1. Images are converted into feature vectors using histogram analysis  
 2. Vectors are compared to calculate similarity scores  
-3. A graph is built with these scores as connections between images  
-4. The system uses nearest neighbors in the graph to find similar animals  
-
-Think of it like a social network—but for animals that look alike.  
-
-## Why Graphs?
-Graphs make comparisons fast and efficient. You don’t need heavy machine learning libraries, and you can actually see how the system is connecting the dots between your images. It’s lightweight, transparent, and surprisingly effective.  
+3. A similarity graph is built with weighted edges  
+4. Nearest neighbors in the graph are used to find similar animals  
 
 ## Accuracy
-On test datasets, the system matches animals with around **70–80% accuracy** based purely on visual similarity.  
 
-## Tech Stack
+- Around **70–80%** accuracy on test datasets  
+
+## Tech
+
 - Java & JavaFX  
-- Graph Data Structures  
-- Histogram-Based Image Features  
-- Custom Priority Queues and Hash Maps  
+- Graph data structures  
+- Histogram-based features  
+- Custom priority queues and hash maps  
 
-## Getting Started
+## Running the Program
+
 1. Clone this repository  
-2. Open the project in IntelliJ IDEA or your favorite Java IDE  
+2. Open it in IntelliJ IDEA or any Java IDE  
 3. Run the `MainApp` class  
-4. Load your image dataset and start classifying  
+4. Load your image dataset  
 
 ## Author
+
 **Nation Dibakwane**  
 Computer Science Graduate – University of Johannesburg
